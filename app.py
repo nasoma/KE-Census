@@ -77,6 +77,7 @@ else:
 st.sidebar.markdown(' #### About')
 st.sidebar.info("This app uses data that is publicly available. It is not affiliated to IEBC or KNBS.")
 st.sidebar.info("Email: tazamadata@gmail.com")
+st.sidebar.info("Email: tazamadata@gmail.com")
 
 
 
