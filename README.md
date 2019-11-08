@@ -1,6 +1,6 @@
 # KPHC 2019 Census
 
-Streamlit app to visualize KPHC 2019 census data.
+Simple streamlit dashboard app to visualize KPHC 2019 census data.
 
 ---
 ![alt text](demo.gif)

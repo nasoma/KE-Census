@@ -1,17 +1,14 @@
-import streamlit as st
-import pandas as pd
 import plotly.graph_objects as go
 import locale
 from analysis import *
 
-locale.setlocale(locale.LC_ALL, 'en_US')
+locale.setlocale(locale.LC_ALL, 'en_US.utf8')
 
 voter_percentages = population_voter_analysis()
 male_female_ratios = gender_ratios()
 
 st.sidebar.markdown('#### Kenya 2019 Population Census Summary')
 
-#df = st.cache(pd.read_csv)('county_list.csv')
 df = pd.read_csv('county_list.csv')
 
 counties = st.sidebar.selectbox('Select county', df['COUNTY'], index=29)
@@ -80,6 +77,8 @@ else:
 st.sidebar.markdown(' #### About')
 st.sidebar.info("This app uses data that is publicly available. It is not affiliated to IEBC or KNBS.")
 st.sidebar.info("Email: tazamadata@gmail.com")
+
+
 
 
 

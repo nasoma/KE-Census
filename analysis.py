@@ -15,6 +15,7 @@ def population_voter_analysis():
         columns={'TOTAL': 'TOTAL POPULATION', 'VOTERS': 'REGISTERED VOTERS'}).head(10)
     return highest_voters_percentage, lowest_voters_percentage
 
+
 @st.cache()
 def gender_ratios():
     df = pd.read_csv('county_list.csv')
