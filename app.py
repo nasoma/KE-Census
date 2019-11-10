@@ -11,6 +11,12 @@ st.sidebar.markdown('#### Kenya 2019 Population Census Summary')
 
 df = pd.read_csv('county_list.csv')
 
+"""
+or read_and_cache_csv = st.cache(pd.read_csv) then
+df = read_and_cache_csv("filename.csv")
+
+"""
+
 counties = st.sidebar.selectbox('Select county', df['COUNTY'], index=29)
 registered_voters = st.sidebar.checkbox("Compare With Voter Registration Data, (IEBC 2017)")
 
