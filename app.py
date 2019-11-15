@@ -11,18 +11,18 @@ st.sidebar.markdown('#### Kenya 2019 Population Census Summary')
 
 df = pd.read_csv('county_list.csv')
 
-"""
-or read_and_cache_csv = st.cache(pd.read_csv) then
-df = read_and_cache_csv("filename.csv") 
 
-see implementation in analysis.py
+#or read_and_cache_csv = st.cache(pd.read_csv) then
+#df = read_and_cache_csv("filename.csv")
+#see implementation in analysis.py
 
-"""
 
 counties = st.sidebar.selectbox('Select county', df['COUNTY'], index=29)
 registered_voters = st.sidebar.checkbox("Compare With Voter Registration Data, (IEBC 2017)")
 
-st.sidebar.markdown(' #### Parts Of Tens')
+st.sidebar.markdown(' #### 📈  Parts Of Tens')
+st.ma
+
 parts_of_tens = st.sidebar.selectbox('', ('Select Option...', '10 Most Populous Counties', '10 Least Populous Counties',
                                             'Highest Male To Female Ratio', 'Highest Female To Male Ratio',
                                             'Highest % Of Registered Voters', 'Lowest % Of Registered Voters'))
