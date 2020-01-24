@@ -11,12 +11,6 @@ st.sidebar.markdown('#### Kenya 2019 Population Census Summary')
 
 df = pd.read_csv('county_list.csv')
 
-
-#or read_and_cache_csv = st.cache(pd.read_csv) then
-#df = read_and_cache_csv("filename.csv")
-#see implementation in analysis.py
-
-
 counties = st.sidebar.selectbox('Select county', df['COUNTY'], index=29)
 registered_voters = st.sidebar.checkbox("Compare With Voter Registration Data, (IEBC 2017)")
 
@@ -89,20 +83,3 @@ else:
 st.sidebar.markdown(' #### About')
 st.sidebar.info("This app uses data that is publicly available. It is not affiliated to IEBC or KNBS.")
 st.sidebar.info("Email: tazamadata@gmail.com")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
